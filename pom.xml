@@ -116,12 +116,16 @@
 
     <repositories>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>sk89q-repo</id>
+            <url>https://maven.enginehub.org/repo/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
             <id>jeff-media-public</id>
@@ -140,17 +144,18 @@
     <dependencies>
         <!-- Core -->
         <dependency>
+            <groupId>com.github.Slimefun</groupId>
+            <artifactId>Slimefun4</artifactId>
+            <version>master-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.19-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.github.Slimefun</groupId>
-            <artifactId>Slimefun4</artifactId>
-            <version>03e5b9a</version>
-            <scope>provided</scope>
-        </dependency>
+
         <dependency>
             <groupId>dev.sefiraat</groupId>
             <artifactId>SefiLib</artifactId>
